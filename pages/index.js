@@ -1,5 +1,13 @@
+
+
 function HomePage() {
-    return <div>Welcome to Next.js!</div>
+    return (
+        <>
+            <div>
+                <h1 className="text-yellow-500">Ronald Almeida</h1>
+            </div>
+        </>
+    )
   }
   
   export default HomePage
