@@ -1,11 +1,17 @@
 import React from "react";
-import { useState } from "react";
 
-export function Button() {
-    
+export function ButtonAdd(props) {
+
     return (
         <div>
-
+            <button onClick={() => {
+                props.add(props.lista + props.valor)
+                console.log(typeof parseInt(props.lista))
+            }}
+                className="p-2 bg-yelloPrimary"
+                type="button">
+                {props.valor}
+            </button>
         </div>
     )
 }
