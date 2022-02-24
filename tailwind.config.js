@@ -11,6 +11,8 @@ module.exports = {
         yelloPrimary: "#F2BF5E",
         darkBluePrimary: "#022026",
         grayPimary: "#022026",
+        bluePrimary: "#4B9EBF",
+        bluishGray: "#405F73",
       },
       fontFamily: {
         sans: ['ui-sans-serif', 'system-ui',],
