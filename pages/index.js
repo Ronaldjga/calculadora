@@ -12,6 +12,11 @@ function HomePage() {
                     <CommonCalculatorBanner></CommonCalculatorBanner>
                 </section>
             </div>
+            <div className="w-full h-full bg-darkBluePrimary flex flex-col items-center p-2">
+                <section>
+                    <CommonCalculatorBanner></CommonCalculatorBanner>
+                </section>
+            </div>
         </>
     )
   }
