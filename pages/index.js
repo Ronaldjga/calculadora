@@ -1,7 +1,7 @@
 import { ReactDOM } from "react"
 import React from "react"
 import next from "next"
-import { CommonCalculatorBanner } from "../src/components/commonCalculatorBanner"
+import { CommonCalculatorBanner, IncomeTaxCalculatorBanner } from "../src/components/calculatorBanner"
 
 
 function HomePage() {
@@ -14,7 +14,7 @@ function HomePage() {
             </div>
             <div className="w-full h-full bg-darkBluePrimary flex flex-col items-center p-2">
                 <section>
-                    <CommonCalculatorBanner></CommonCalculatorBanner>
+                    <IncomeTaxCalculatorBanner></IncomeTaxCalculatorBanner>
                 </section>
             </div>
         </>
