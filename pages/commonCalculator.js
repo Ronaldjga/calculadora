@@ -1,10 +1,14 @@
-import react, { useState } from "react"
+import react, { useState, useEffect } from "react"
 import next from "next"
 import { useEffect } from "react"
 import { ButtonAdd, ButtonEqual, ButtonClear, ButtonEquations, ButtonRemoveLast } from "../src/components/buttons"
 
 export default function CommonCalculatorPage() {
     const [tela, setTela] = react.useState('')
+
+    react.useEffect(() => {
+        tela
+    })
 
     return (
         <html lang="pt-BR">
