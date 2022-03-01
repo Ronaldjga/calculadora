@@ -34,7 +34,7 @@ export function IncomeTaxCalculatorBanner() {
 export function ImcCalculatorBanner() {
     const routes = useRouter()
     return (
-        <button type="button" onClick={()=> {routes.push(`/incomeTaxCalculator`)}}>
+        <button type="button" onClick={()=> {routes.push(`/imcCalculator`)}}>
             <div className="min-w-[300px] bg-yelloPrimary p-2 flex flex-col gap-2">
                 <Image width={'50px'} height={'50px'} src={imcCalculatorIcon} />
                 <h2 className="text-white font-bold text-2xl">Calculadora de IMC</h2>
