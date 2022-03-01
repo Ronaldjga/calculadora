@@ -7,18 +7,12 @@ import { CommonCalculatorBanner, IncomeTaxCalculatorBanner } from "../src/compon
 function HomePage() {
     return (
         <>
-            <div className="w-full h-full bg-darkBluePrimary flex flex-col items-center p-2">
-                <section>
-                    <CommonCalculatorBanner></CommonCalculatorBanner>
-                </section>
-            </div>
-            <div className="w-full h-full bg-darkBluePrimary flex flex-col items-center p-2">
-                <section>
-                    <IncomeTaxCalculatorBanner></IncomeTaxCalculatorBanner>
-                </section>
-            </div>
+            <section className="w-full h-full bg-darkBluePrimary flex justify-center gap-5 items-center p-2">
+                <CommonCalculatorBanner></CommonCalculatorBanner>
+                <IncomeTaxCalculatorBanner></IncomeTaxCalculatorBanner>
+            </section>
         </>
     )
-  }
-  
-  export default HomePage
+}
+
+export default HomePage
