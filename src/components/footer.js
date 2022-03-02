@@ -8,7 +8,7 @@ export function Footer() {
                 
                 <h2 className="text-3xl font-h2Title text-white">Ronald Almeida</h2>
                 <button
-                    className="text-darkBluePrimary bg-yelloPrimary py-2 px-5 rounded-xl font-bold"
+                    className="text-darkBluePrimary bg-yelloPrimary py-2 px-5 font-bold"
                 >
                     Meu Portifolio
                 </button>
