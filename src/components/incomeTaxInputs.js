@@ -46,7 +46,7 @@ export function IncomeTaxCalculator() {
 
             </div> 
                 <button
-                className="bg-yelloPrimary w-2/4 p-2"
+                className="bg-yelloPrimary w-full sm:w-2/4 p-2"
                 onClick={(e) => {
                     e.preventDefault
 
