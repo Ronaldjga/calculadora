@@ -16,7 +16,7 @@ export function IncomeTaxCalculator() {
                 <input
                     type={`text`}
                     placeholder="resultado"
-                    className="col-span-2 p-2 bg-white font-bold"
+                    className="col-span-2 p-2 bg-white font-bold text-center"
                     disabled
                     value={result}
                 />

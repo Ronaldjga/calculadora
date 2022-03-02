@@ -35,7 +35,7 @@ export function ImcInputs() {
                 />
 
                 <input
-                    className="p-2 bg-white col-span-2 h-12 font-bold"
+                    className="p-2 bg-white col-span-2 h-12 font-bold text-center"
                     placeholder="Resutlado"
                     value={result}
                     disabled
