@@ -6,7 +6,7 @@ export function ImcInputs() {
     const [altura, setAltura] = react.useState('')
 
     return (
-        <>
+        <div className="w-full h-full flex flex-col items-center justify-around">
             <h1
                 className="font-h1Title text-white text-3xl text-center sm:text-5xl font-bold"
             >Calculadora de IMC
@@ -48,35 +48,48 @@ export function ImcInputs() {
                 className="bg-yelloPrimary w-2/4 p-2"
                 onClick={(e) => {
                     e.preventDefault;
-                    const newAltura = altura[0] + '.' + altura[1] + altura[2]
+
+                    if (peso === '' && altura === '') {
+                        setResult('')
+                        setResult(`preencha os campos acima`)
+                    } else if (peso === '') {
+                        setResult('')
+                        setResult(`Preencha o campo de peso`)
+                    } else if (altura === '') {
+                        setResult('')
+                        setResult(`Preencha o campo de altura`)
+                    } else {
+                        const newAltura = altura[0] + '.' + altura[1] + altura[2]
                     const conta = peso / (newAltura * newAltura)
                     if (conta <= 18.5) {
                         setResult('')
-                        setResult(`Abaixo do peso. Seu IMC: ${conta}`)
+                        setResult(`Abaixo do peso. Seu IMC: ${conta.toFixed(2)}`)
                     } else if (conta >= 18.6 && conta <= 24.9) {
                         setResult('')
-                        setResult(`Peso Normal. Seu IMC: ${conta}`)
+                        setResult(`Peso Normal. Seu IMC: ${conta.toFixed(2)}`)
                     } else if (conta >= 25 && conta <= 29.9) {
                         setResult('')
-                        setResult(`Acima do Peso (Sobrepeso). Seu IMC: ${conta}`)
+                        setResult(`Acima do Peso (Sobrepeso). Seu IMC: ${conta.toFixed(2)}`)
                     } else if (conta >= 30 && conta <= 34.9) {
                         setResult('')
-                        setResult(`Obesidade I. Seu IMC: ${conta}`)
+                        setResult(`Obesidade I. Seu IMC: ${conta.toFixed(2)}`)
                     } else if (conta >= 35 && conta <= 39.9) {
                         setResult('')
-                        setResult(`Obesidade II. Seu IMC: ${conta}`)
+                        setResult(`Obesidade II. Seu IMC: ${conta.toFixed(2)}`)
                     } else if (conta > 40) {
                         setResult('')
-                        setResult(`Obesidade III. Seu IMC: ${conta}`)
+                        setResult(`Obesidade III. Seu IMC: ${conta.toFixed(2)}`)
                     } else {
                         setResult('')
                         setResult(`Conta Invalida`)
+                    }
+
                     }
                 }}
             >
                 Calcular
             </button>
-        </>
+        </div>
 
     )
 }

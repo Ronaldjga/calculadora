@@ -10,9 +10,14 @@ export default function imcCalculator() {
                 className="w-full h-full bg-darkBluePrimary flex flex-col items-center justify-center p-2 gap-5"
             >
                 <div
-                    className="bg-gray-900 w-2/4 flex flex-col items-center gap-5"
+                    className="min-h-[500px] bg-gray-900 w-2/4 flex flex-col items-center gap-5 p-2 border-2 border-yelloPrimary"
                 >
                     <ImcInputs></ImcInputs>
+                </div>
+                <div>
+                    <p className="text-white">
+                        Calculo de IMC
+                    </p>
                 </div>
             </div>
         </>
