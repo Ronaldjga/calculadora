@@ -8,12 +8,12 @@ export function ImcInputs() {
     return (
         <div className="w-full h-full flex flex-col items-center justify-around">
             <h1
-                className="font-h1Title text-white text-3xl text-center sm:text-5xl font-bold"
+                className="font-h1Title text-white text-3xl text-center sm:text-4xl lg:text-5xl font-bold"
             >Calculadora de IMC
             </h1>
             <div className="w-full grid grid-rows-2 grid-cols-2 gap-4 p-2">
                 <input
-                    className="p-2"
+                    className="p-2 h-12 font-bold"
                     type={`text`}
                     placeholder="Peso"
                     maxLength={`3`}
@@ -24,7 +24,7 @@ export function ImcInputs() {
                 />
                 
                 <input
-                    className="p-2"
+                    className="p-2 h-12 font-bold"
                     type={`text`}
                     placeholder="Altura"
                     maxLength={`3`}
@@ -35,7 +35,7 @@ export function ImcInputs() {
                 />
 
                 <input
-                    className="p-2 bg-white col-span-2"
+                    className="p-2 bg-white col-span-2 h-12 font-bold"
                     placeholder="Resutlado"
                     value={result}
                     disabled
@@ -45,7 +45,7 @@ export function ImcInputs() {
 
 
             <button
-                className="bg-yelloPrimary w-2/4 p-2"
+                className="bg-yelloPrimary w-full sm:w-2/4 p-2"
                 onClick={(e) => {
                     e.preventDefault;
 
