@@ -14,6 +14,7 @@ export default function imcCalculator() {
                 >
                     <ImcInputs></ImcInputs>
                 </div>
+                
                 <div>
                     <p className="text-white">
                         Calculo de IMC

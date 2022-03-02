@@ -1,6 +1,6 @@
 import react, { useState } from "react"
 import next from "next"
-import { Result } from "../src/components/incomeTaxInputs"
+import { IncomeTaxCalculator } from "../src/components/incomeTaxInputs"
 
 
 export default function incomeTaxCalculator() {
@@ -10,16 +10,11 @@ export default function incomeTaxCalculator() {
         <>
             <div className="w-full h-full bg-darkBluePrimary flex flex-col items-center justify-center p-2 gap-5">
                 <div
-                    className="w-full h-full flex flex-col items-center justify-center p-2 gap-5"
+                    className="min-h-[500px] lg:w-2/4 bg-gray-900 flex flex-col items-center gap-5 p-2 border-2 border-yelloPrimary"
                 >
-                    <div
-                        className="bg-gray-900 w-2/4 flex flex-col items-center gap-5"
-                    >
-                        <Result></Result>
-                        
-                    </div>
+                    <IncomeTaxCalculator></IncomeTaxCalculator>
                 </div>
-            </div> 
+            </div>
         </>
     )
 }
