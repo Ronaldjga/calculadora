@@ -3,6 +3,7 @@ import React from "react"
 import next from "next"
 import { CommonCalculatorBanner, ImcCalculatorBanner, IncomeTaxCalculatorBanner } from "../src/components/calculatorBanner"
 import { Footer } from "../src/components/footer"
+import { ReportButton } from "../src/components/reportButton"
 
 
 function HomePage() {
@@ -19,6 +20,7 @@ function HomePage() {
                         <IncomeTaxCalculatorBanner></IncomeTaxCalculatorBanner>
                         <ImcCalculatorBanner></ImcCalculatorBanner>
                     </section>
+                    <ReportButton></ReportButton>
                 </main>
                 <Footer></Footer>
             </section>
