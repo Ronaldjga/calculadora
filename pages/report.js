@@ -1,12 +1,15 @@
 import react from "react";
+import { FormReport } from "../src/components/formReport";
 
 export default function Report() {
     return (
         <>
             <div className="w-full h-full bg-darkBluePrimary flex flex-col items-center justify-center p-2 gap-5">
-                <div className="min-h-[500px] lg:w-2/4 bg-gray-900 flex flex-col items-center gap-5 p-2 border-2 border-yelloPrimary">
-                    
-                </div>
+                <h1 className="text-white font-h1Title text-center text-5xl font-bold p-2">Reporte</h1>
+                <p className="max-w-screen-lg mx-auto text-white">
+                    Calculadoras online é um site desenvolvido como experimento prático no intuito de reforçar conhecimento de tecnologias de desenvolvimento web. Portanto, se encontrar algum erro, reporte para que haja correção.
+                </p>
+                <FormReport></FormReport>
             </div>
         </>
     )
