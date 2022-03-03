@@ -11,7 +11,10 @@ function HomePage() {
             <section className="w-full h-full bg-darkBluePrimary flex flex-col justify-between">
                 <main className="p-5">
                     <h1 className="text-white font-h1Title text-center text-5xl font-bold p-2">Calculadoras</h1>
-                    <section className="grid grid-cols-3 justify-center gap-5 items-center p-5">
+                    <p className="max-w-screen-lg mx-auto text-white">
+                        Calculadoras online é um site desenvolvido como experimento prático no intuito de reforçar conhecimento de tecnologias de desenvolvimento web. Portanto, se encontrar algum erro, reporte para que haja correção.
+                    </p>
+                    <section className="max-w-screen-lg flex flex-col justify-center gap-10 mx-auto p-5">
                         <CommonCalculatorBanner></CommonCalculatorBanner>
                         <IncomeTaxCalculatorBanner></IncomeTaxCalculatorBanner>
                         <ImcCalculatorBanner></ImcCalculatorBanner>
