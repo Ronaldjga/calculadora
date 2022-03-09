@@ -49,6 +49,7 @@ export function IncomeTaxCalculator() {
                 className="bg-yelloPrimary w-full sm:w-2/4 p-2"
                 onClick={(e) => {
                     e.preventDefault
+                    const dependentes = numberDependents * 189.59
                     if (grossSalary <= 1903.98) {
                         setResult('')
                         setResult('Isento de Imposto de renda')
@@ -57,13 +58,79 @@ export function IncomeTaxCalculator() {
                             const fist = 1212 * (7.5 / 100)
                             const second = (grossSalary - 1212) * (9 / 100)
                             const contaInss = fist + second
-                            const dependentes = numberDependents * 189.59
+                            const finalResult = ((grossSalary - dependentes - contaInss) * (7.5 / 100)) - 142.80
+                            setResult('')
+                            setResult(finalResult)
+                        } else {
+                            const fist = 1212 * (7.5 / 100)
+                            const second = (2427.35 - 1212) * (9 / 100)
+                            const third = (grossSalary - 2427.35) * (12 / 100)
+                            const contaInss = fist + second + third
                             const finalResult = ((grossSalary - dependentes - contaInss) * (7.5 / 100)) - 142.80
                             setResult('')
                             setResult(finalResult)
                         }
-                    } else if (grossSalary >= 2826.66 && grossSalary <= 3751.05) {
+                    }
+                    
+                    
+                    else if (grossSalary >= 2826.66 && grossSalary <= 3751.05) {
+                        if (grossSalary >= 2826.66 && grossSalary <= 3641.04) {
+                            const fist = 1212 * (7.5 / 100)
+                            const second = (2427.35 - 1212) * (9 / 100)
+                            const third = (grossSalary - 2427.35) * (12 / 100)
+                            console.log(fist)
+                            console.log(second)
+                            console.log(third)
+                            const contaInss = fist + second + third
+                            console.log(contaInss)
+                            const finalResult = ((grossSalary - dependentes - contaInss) * (15 / 100)) - 354.80
+                            setResult('')
+                            setResult(finalResult.toFixed(2))
+                        } else {
+                            const fist = 1212 * (7.5 / 100)
+                            const second = (2427.35 - 1212) * (9 / 100)
+                            const third = (3641.03 - 2427.35) * (12 / 100)
+                            const fourth = (grossSalary - 3641.03) * (14 / 100)
+                            const contaInss = fist + second + third + fourth
+                            const finalResult = ((grossSalary - dependentes - contaInss) * (15 / 100)) - 354.80
+                            setResult('')
+                            setResult(finalResult.toFixed(2))
+                        }
+                    }
+                    
+                    
+                    else if (grossSalary >= 3751.06 && grossSalary <= 4664.68) {
+                        if (grossSalary >= 3751.06) {
+                            const fist = 1212 * (7.5 / 100)
+                            const second = (2427.35 - 1212) * (9 / 100)
+                            const third = (3641.03 - 2427.35) * (12 / 100)
+                            const fourth = (grossSalary - 3641.03) * (14 / 100)
+                            const contaInss = fist + second + third + fourth
+                            console.log(contaInss)
+                            const finalResult = ((grossSalary - dependentes - contaInss) * (22.5 / 100)) - 636.13
+                            setResult('')
+                            setResult(finalResult.toFixed(2))
+                        }
+                    }
 
+
+                    else if (grossSalary >= 4664.69) {
+                        if (grossSalary >= 3751.06) {
+                            const fist = 1212 * (7.5 / 100)
+                            const second = (2427.35 - 1212) * (9 / 100)
+                            const third = (3641.03 - 2427.35) * (12 / 100)
+                            const fourth = (grossSalary - 3641.03) * (14 / 100)
+                            const contaInss = fist + second + third + fourth
+                            console.log(contaInss)
+                            const finalResult = ((grossSalary - dependentes - contaInss) * (27.5 / 100)) - 869.36
+                            setResult('')
+                            setResult(finalResult.toFixed(2))
+                        }
+                    } 
+                    
+                    else {
+                        setResult('')
+                        setResult('Conta Invalida')
                     }
                     
 
