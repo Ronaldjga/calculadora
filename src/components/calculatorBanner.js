@@ -10,9 +10,9 @@ export function CommonCalculatorBanner() {
     return (
         <button type="button" onClick={()=> {routes.push(`/commonCalculator`)}}>
             <div
-                className="min-w-[300px] min-h-[165px] bg-yelloPrimary flex gap-2 justify-between border-2 border-yelloPrimary">
+                className="min-w-[300px] min-h-[165px] bg-yelloPrimary flex flex-col sm:flex-row gap-2 justify-between border-2 border-yelloPrimary">
                 
-                <div className="w-1/5 min-w-[195px] bg-gray-900 flex justify-center">
+                <div className="w-full min-h-[150px] sm:min-h-0 sm:w-1/5 min-w-[195px] bg-gray-900 flex justify-center">
                     <Image width={'75px'} height={'75px'} src={commonCalculatorIcon} />
                 </div>
 
@@ -30,9 +30,9 @@ export function IncomeTaxCalculatorBanner() {
     return (
         <button type="button" onClick={()=> {routes.push(`/incomeTaxCalculator`)}}>
             <div
-                className="min-w-[300px] min-h-[165px] bg-yelloPrimary flex gap-2 justify-between border-2 border-yelloPrimary">
+                className="min-w-[300px] min-h-[165px] bg-yelloPrimary flex flex-col sm:flex-row gap-2 justify-between border-2 border-yelloPrimary">
                 
-                <div className="w-1/5 min-w-[195px] bg-gray-900 flex justify-center">
+                <div className="w-full min-h-[150px] sm:min-h-0 sm:w-1/5 min-w-[195px] bg-gray-900 flex justify-center">
                     <Image width={'75px'} height={'75px'} src={incomeTaxCalculatorIcon} />
                 </div>
                 
@@ -49,8 +49,8 @@ export function ImcCalculatorBanner() {
     const routes = useRouter()
     return (
         <button type="button" onClick={()=> {routes.push(`/imcCalculator`)}}>
-            <div className="min-w-[300px] min-h-[165px] bg-yelloPrimary flex gap-2 justify-between border-2 border-yelloPrimary">
-                <div className="w-1/5 min-w-[195px] bg-gray-900 flex justify-center">
+            <div className="min-w-[300px] min-h-[165px] bg-yelloPrimary flex flex-col sm:flex-row gap-2 justify-between border-2 border-yelloPrimary">
+                <div className="w-full min-h-[150px] sm:min-h-0 sm:w-1/5 min-w-[195px] bg-gray-900 flex justify-center">
                     <Image width={'75px'} height={'75px'} src={imcCalculatorIcon} />
                 </div>
                 <div className="p-2 text-darkBluePrimary">

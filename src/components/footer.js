@@ -6,7 +6,7 @@ export function Footer() {
             <div className="w-2/4 flex flex-col items-center justify-center gap-3">
                 <p className="text-yelloPrimary">Informações pessoais</p>
                 
-                <h2 className="text-3xl font-h2Title text-white">Ronald Almeida</h2>
+                <h2 className="text-center text-3xl font-h2Title text-white">Ronald Almeida</h2>
                 <button
                     className="text-darkBluePrimary bg-yelloPrimary py-2 px-5 font-bold"
                 >
